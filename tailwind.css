@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .match__info {
+    @apply bg-green-200 w-full h-1/6 rounded-lg;
+  }
+}
