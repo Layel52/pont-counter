@@ -4,10 +4,14 @@
 
 @layer components {
   .match__info {
-    @apply bg-green-200 w-full h-1/6 rounded-lg;
+    @apply flex items-center bg-green-200 w-full h-1/6 rounded-lg;
   }
 
   .win {
-    @apply block w-14 h-8 bg-slate-500 rounded-full;
+    @apply block relative w-14 h-8 bg-slate-500 rounded-full before:contents;
+  }
+
+  .win:before {
+    @apply before:contents block relative top-1 left-1.5 w-6 h-6 bg-slate-200 rounded-full ;
   }
 }
