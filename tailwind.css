@@ -7,11 +7,17 @@
   Cards structure 
 */
   .match__info {
-    @apply flex items-center bg-red-600 w-full h-1/6 rounded-lg;
+    @apply flex items-center w-full h-1/6 p-3 justify-between 
+    rounded-lg  bg-red-600 
+    font-semibold text-white text-lg;
   }
 
   .win {
     @apply block relative w-14 h-8 bg-red-900 rounded-full transition-all duration-500
     before:block before:relative before:top-1 before:left-1.5 before:w-6 before:h-6 before:bg-slate-200 before:rounded-full before:transition-all;
   } 
+
+  .result {
+    @apply flex p-3 justify-between w-44;
+  }
 }

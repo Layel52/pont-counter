@@ -7,18 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">    
 </head>
 
 <body>
     <div class="w-screen h-screen flex justify-center items-center">
-        <div class="bg-gray-600 w-1/3 h-2/3 rounded-lg p-8">
+        <main class="bg-gray-600 min-h-2/3 rounded-lg p-8">
+            <!-- 
+                CARDS
+            -->
             <div class="match__info">
-                <div class="toggle-bnt">
-                    <input type="checkbox" id="win" class="hidden peer/win">
-                    <label for="win" class="win peer-checked/win:bg-green-900 peer-checked/win:before:left-7"></label>
-                </div>  
+                <div class="items-center">
+                    <label for="champion" class="p-4">Choose a Champion</label>
+                    <select name="champion" id="champion" form="champions" class="p-1 rounded-md bg-red-900">
+                        <option value="irelia">Irelia</option>
+                        <option value="lucian">Lucian</option>
+                        <option value="nar">Nar</option>
+                        <option value="sett">Sett</option>
+                        <option value="darius">Darius</option>
+                        <option value="rengar">Rengar</option>  
+                    </select>
+                </div>
+                <div class="result">
+                    <p>Defeat</p>
+                    <div class="toggle-bnt">
+                        <input type="checkbox" id="win" class="hidden peer/win">
+                        <label for="win" class="win peer-checked/win:bg-green-900 peer-checked/win:before:left-7"></label>
+                    </div>
+                    <p>Win</p>
+                </div>
+                <div class="flex p-3 items-center">
+                    <p>Points:</p>
+                    <span id="points" class="bg-red-900 rounded-md px-2 text-4xl text-yellow-400">45</span>
+                </div>
             </div>
-        </div>
+        </main>
     </div>
 </body>
 
